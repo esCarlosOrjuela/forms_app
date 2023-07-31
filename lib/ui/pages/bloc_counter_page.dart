@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:forms_app/ui/state_managers/blocs/counter/counter_bloc.dart';
 
-class BlocCounterScreen extends StatelessWidget {
-  const BlocCounterScreen({super.key});
+class BlocCounterPage extends StatelessWidget {
+  const BlocCounterPage({super.key});
 
   @override
   Widget build(BuildContext context) {

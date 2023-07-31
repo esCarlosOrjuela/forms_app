@@ -1,25 +1,30 @@
-import 'package:forms_app/ui/screens/page.dart';
+import 'package:forms_app/ui/pages/page.dart';
 import 'package:go_router/go_router.dart';
 
 final appRouter = GoRouter(initialLocation: '/home', routes: [
   GoRoute(
     path: '/home',
-    builder: (context, state) => const HomeScreen(),
+    builder: (context, state) => const HomePage(),
   ),
   GoRoute(
     path: '/cubits',
-    builder: (context, state) => const CubitCounterScreen(),
+    builder: (context, state) => const CubitCounterPage(),
   ),
   GoRoute(
     path: '/blocs',
-    builder: (context, state) => const BlocCounterScreen(),
+    builder: (context, state) => const BlocCounterPage(),
+  ),
+  GoRoute(
+    path: '/register',
+    builder: (context, state) => const RegisterPage(),
   )
 ]);
 
 // enum RoutesPageApp { homeScreen, cubits }
 
-class RoutesPageApp{
-  static const String homeScreen = '/home';
-  static const String cubitScreen = '/cubits';
-  static const String blocScreen = '/blocs';
+class RoutesPageApp {
+  static const String homePage = '/home';
+  static const String cubitPage = '/cubits';
+  static const String blocPage = '/blocs';
+  static const String registerPage = '/register';
 }

@@ -4,8 +4,8 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import '../state_managers/cubits/counter/counter_cubit.dart';
 
 
-class CubitCounterScreen extends StatelessWidget {
-  const CubitCounterScreen({super.key});
+class CubitCounterPage extends StatelessWidget {
+  const CubitCounterPage({super.key});
 
   @override
   Widget build(BuildContext context) {
